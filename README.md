@@ -3,7 +3,10 @@ Cordova Advanced HTTP
 [![npm version](https://img.shields.io/npm/v/cordova-plugin-advanced-http)](https://www.npmjs.com/package/cordova-plugin-advanced-http?activeTab=versions)
 [![MIT Licence](https://img.shields.io/badge/license-MIT-blue?style=flat)](https://opensource.org/licenses/mit-license.php)
 [![downloads/month](https://img.shields.io/npm/dm/cordova-plugin-advanced-http.svg)](https://www.npmjs.com/package/cordova-plugin-advanced-http)
-[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/silkimen/cordova-plugin-advanced-http/.github/workflows/ci.yml?branch=master)](https://github.com/silkimen/cordova-plugin-advanced-http/actions)
+
+[![Travis Build Status](https://img.shields.io/travis/com/silkimen/cordova-plugin-advanced-http/master?label=Travis%20CI)](https://app.travis-ci.com/silkimen/cordova-plugin-advanced-http)
+[![GitHub Build Status](https://img.shields.io/github/workflow/status/silkimen/cordova-plugin-advanced-http/Cordova%20HTTP%20Plugin%20CI/master?label=GitHub%20Actions)](https://github.com/silkimen/cordova-plugin-advanced-http/actions)
+
 
 Cordova / Phonegap plugin for communicating with HTTP servers.  Supports iOS, Android and [Browser](#browserSupport).
 
@@ -160,7 +163,7 @@ cordova.plugin.http.getCookieString(url);
 ```
 
 ### setCookie
-Add a custom cookie. Takes a URL, a cookie string and an options object. See [ToughCookie documentation](https://github.com/salesforce/tough-cookie#setcookiecookieorstring-currenturl-options-cberrcookie) for allowed options. Cookie will persist until removed with [removeCookies](#removecookies) or [clearCookies](#clearcookies).
+Add a custom cookie. Takes a URL, a cookie string and an options object. See [ToughCookie documentation](https://github.com/salesforce/tough-cookie#setcookiecookieorstring-currenturl-options-cberrcookie) for allowed options.
 
 ```js
 cordova.plugin.http.setCookie(url, cookie, options);
@@ -511,6 +514,7 @@ We made a few modifications to the networking libraries.
 This plugin uses amazing cloud services to maintain quality. CI Builds and E2E testing are powered by:
 
 * [GitHub Actions](https://github.com/features/actions)
+* [Travis CI](https://travis-ci.org/)
 * [BrowserStack](https://www.browserstack.com/)
 * [Sauce Labs](https://saucelabs.com/)
 * [httpbin.org](https://httpbin.org/)
